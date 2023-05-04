@@ -7,6 +7,10 @@ import { FromComponent } from './from/from.component';
 import { FilterComponent } from './filter/filter.component';
 import { ConcatComponent } from './concat/concat.component';
 import { MergeComponent } from './merge/merge.component';
+import { ZipComponent } from './zip/zip.component';
+import { FirstComponent } from './first/first.component';
+import { PluckComponent } from './pluck/pluck.component';
+import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 
 const routes: Routes = [
   {
@@ -41,6 +45,22 @@ const routes: Routes = [
   {
     path:'merge',
     component:MergeComponent
+  },
+  {
+    path:'zip',
+    component:ZipComponent
+  },
+  {
+    path:'first',
+    component:FirstComponent
+  },
+  {
+    path:'pluck',
+    component:PluckComponent
+  },
+  {
+    path:'combineLatest',
+    component:CombineLatestComponent
   }
 ];
 

@@ -9,6 +9,10 @@ import { FromComponent } from './from/from.component';
 import { FilterComponent } from './filter/filter.component';
 import { ConcatComponent } from './concat/concat.component';
 import { MergeComponent } from './merge/merge.component';
+import { ZipComponent } from './zip/zip.component';
+import { FirstComponent } from './first/first.component';
+import { PluckComponent } from './pluck/pluck.component';
+import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { MergeComponent } from './merge/merge.component';
     FromComponent,
     FilterComponent,
     ConcatComponent,
-    MergeComponent
+    MergeComponent,
+    ZipComponent,
+    FirstComponent,
+    PluckComponent,
+    CombineLatestComponent
   ],
   imports: [
     BrowserModule,
