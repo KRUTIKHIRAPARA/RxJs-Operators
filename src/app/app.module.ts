@@ -17,6 +17,7 @@ import { MergeMapComponent } from './merge-map/merge-map.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { TapComponent } from './tap/tap.component';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TapComponent } from './tap/tap.component';
     MergeMapComponent,
     ConcatMapComponent,
     SwitchMapComponent,
-    TapComponent
+    TapComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,

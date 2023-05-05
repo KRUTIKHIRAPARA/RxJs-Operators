@@ -15,6 +15,8 @@ import { MergeMapComponent } from './merge-map/merge-map.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { TapComponent } from './tap/tap.component';
+import { timer } from 'rxjs';
+import { TimerComponent } from './timer/timer.component';
 
 const routes: Routes = [
   {
@@ -81,6 +83,10 @@ const routes: Routes = [
   {
     path:'tap',
     component:TapComponent
+  },
+  {
+    path:'timer',
+    component:TimerComponent
   }
 ];
 
