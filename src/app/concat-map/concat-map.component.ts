@@ -16,16 +16,14 @@ export class ConcatMapComponent {
     
       const source = from(['First','Second','Third']);
 
-      // Concat Map
+      // 1. Concat Map
 
       source.pipe(map(res => this.getData(res)))
       .subscribe(res =>{
         console.log(res);
       });
 
-
-
-      // Concat All
+      // 2. Concat All
 
       source.pipe(map(res => this.getData(res)),
           concatAll()
@@ -34,9 +32,7 @@ export class ConcatMapComponent {
         console.log(res);
       });
 
-
-
-      // concatMap
+      // 3. concatMap
       
       source.pipe(concatMap(res => this.getData(res)))
       .subscribe(res =>{

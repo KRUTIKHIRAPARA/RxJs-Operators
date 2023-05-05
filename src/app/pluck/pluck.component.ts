@@ -8,7 +8,7 @@ import { of, pluck } from 'rxjs';
 })
 export class PluckComponent {
 
-      source = of({name:'Krutik',lastName:'Hirapara'});
+      source = of({name:'Krutik',lastName:'Hirapara'},{name:'Dhruv',lastName:'Gorasiya'});
 
       ngOnInit(): void {
     
