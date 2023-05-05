@@ -18,7 +18,7 @@ export class TimerComponent {
     const pause$ = fromEvent(this.pause?.nativeElement, 'click').pipe(mapTo(false));
     const resume$ = fromEvent(this.resume?.nativeElement, 'click').pipe(mapTo(true));
     
-    const timer$ = merge(pause$, resume$)
+    merge(pause$, resume$)
       .pipe(
         startWith(true),
         switchMap((val) => (val ? interval$ : empty())),
