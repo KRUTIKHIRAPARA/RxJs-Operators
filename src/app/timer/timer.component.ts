@@ -10,9 +10,9 @@ export class TimerComponent {
 
   ans:string | undefined;
 
-  @ViewChild('remaining',{static:true}) remaining:ElementRef | undefined;
-  @ViewChild('pause',{static:true}) pause:ElementRef | undefined;
-  @ViewChild('resume',{static:true}) resume:ElementRef | undefined;
+  @ViewChild('remaining') remaining:ElementRef | undefined;
+  @ViewChild('pause') pause:ElementRef | undefined;
+  @ViewChild('resume') resume:ElementRef | undefined;
 
   test(){
     const COUNTDOWN_SECONDS = 60;
